@@ -38,7 +38,7 @@ public class SlimyRepair extends JavaPlugin implements SlimefunAddon {
             try {
                 Files.copy(this.getClass().getResourceAsStream("/repairs.yml"), repairsFile.toPath());
             } catch (IOException e) {
-                getInstance().getLogger().log(Level.SEVERE, "Failed to copy default repairs.yml file", e);
+                getInstance().getLogger().log(Level.SEVERE, "未能复制默认的 repairs.yml 文件", e);
             }
         }
 
